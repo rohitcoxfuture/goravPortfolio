@@ -5,7 +5,7 @@
 /* root variables */
 :root {
 
-    --primary-color:#FFFBF1;
+    --primary-color: #FFFBF1;
     --secondary-color: #FFF2D0;
     --third-color: #6FD1D7;
 
@@ -13,7 +13,7 @@
     --font-color: ;
     --heading-style: "Cause", cursive;
     --font-style: "Roboto Slab", serif;
-    --heading-size: 2rem;
+    --heading-size: 2.5rem;
     --font-size: 1rem;
     --heading-weigth: 900;
     --font-weigth: 700;
@@ -21,7 +21,7 @@
 }
 
 /* body background */
-body{
+body {
     min-height: 100vh;
     background: linear-gradient(-45deg, #0f172a, #1e293b, #243a6b, #3e2c5e);
     background-size: 400% 400%;
@@ -29,39 +29,41 @@ body{
     color: white;
 }
 
-@keyframes gradient{
-    0%{
+@keyframes gradient {
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
 }
 
 /* header */
-.navbar-brand{
+.navbar-brand {
     font-family: var(--heading-style);
     font-weight: var(--heading-weigth);
     color: var(--primary-color);
 }
 
-.nav-link{
+.nav-link {
     color: var(--secondary-color);
     font-family: var(--font-style);
     font-weight: var(--font-weigth);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--primary-color);
     text-shadow: var(--primary-color);
 }
 
 /* hero section */
 
-.hero-main{
+.hero-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +71,7 @@ body{
     height: 85vh;
 }
 
-.hero-name{
+.hero-name {
     font-family: var(--heading-style);
     font-weight: var(--heading-weigth);
     text-align: justify;
@@ -77,20 +79,51 @@ body{
     margin-top: 15vh;
 }
 
-.info-stats{
+.info-stats {
     font-family: var(--font-style);
 }
 
-.hero-btn{
+.hero-btn {
     display: flex;
     justify-content: end;
     gap: 1rem;
 }
 
-.hero-link{
+.hero-link {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+/* skills */
+
+.heading {
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.skills {
+    font-weight: var(--heading-weigth);
+    font-size: var(--heading-size);
+    font-family: var(--heading-style);
+    margin: 5vh 0;
+}
+
+.skill-heading{
+    font-family: var(--heading-style);
+    margin: 3vh 1vh;
+    padding: 3vh 1vh;
+}
+
+.icon-circle{
+    font-size: 0.5rem;
+}
+
+.skill-info{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-style);
+}
+
 
 /* fetaure project */
 
